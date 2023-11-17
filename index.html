@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prahi</title>
+  <!-- Font awesome Icon Library -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <!-- Main Css File -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="117">
+  <!-- Navbar Section Start -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">Prahi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars menu-btn"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link mt-4 mt-lg-0 mb-2 mb-md-0" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mb-2 mb-md-0" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mb-2 mb-md-0" href="#services">Services</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link mb-2 mb-md-0" href="#menu">menu</a> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mb-2 mb-md-0" href="#careers">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link mb-4 mb-md-0">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center justify-content-center shop">
+          <div style="cursor: pointer;" onclick="handleEmpty()" class="shooping me-5 d-none d-lg-inline-block">
+
+            <span id="cart" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+
+          <a href="forms.html" class="main-btn my-4 my-lg-0"> Sign In </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Section End -->
+
+  <!-- Home Section Start -->
+  <section class="home text-center" id="home">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6">
+          <div class="home__info text-lg-start mb-5 mb-lg-0">
+            <h1>
+              “Decorating rule:
+              <br />
+              Live with what you love.”
+            </h1>
+            <p class="lh-lg my-4">
+              "When it comes to decor, go with what moves you.It's your story, your canvas, your masterpeice."
+            </p>
+            <a href="#services" class="main-btn mx-auto mx-lg-0">order now</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="home__image">
+            <img class="img-fluid" src="./assets/images/decor.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="categories-food mt-5 text-center">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-lg-0">
+            <div class="category-box py-4 mb-4 mb-lg-0">
+              <div class="info">
+                <img src="./assets/images/mirror.jpeg" alt="" />
+                <h3>Mirror</h3>
+
+                <div class="stars my-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="footer d-flex align-items-center justify-content-center">
+                  <span class="price pe-4">Rs 1500/-</span>
+                  <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-lg-0">
+            <div class="category-box py-4 mb-4 mb-lg-0">
+              <div class="info">
+                <img src="./assets/images/couch.jpeg" alt="" />
+
+                <h3>Couch</h3>
+
+                <div class="stars my-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="footer d-flex align-items-center justify-content-center">
+                  <span class="price pe-4">Rs 51000/-</span>
+                  <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-lg-0">
+            <div class="category-box py-4 mb-4 mb-lg-0">
+              <div class="info">
+                <img src="./assets/images/curtain.webp" alt="" />
+
+                <h3>Curtains</h3>
+
+                <div class="stars my-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="footer d-flex align-items-center justify-content-center">
+                  <span class="price pe-4">Rs 2500/-</span>
+                  <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-lg-0">
+            <div class="category-box py-4">
+              <div class="info">
+                <img src="./assets/images/dining.webp" alt="" />
+
+                <h3>Dinning</h3>
+
+                <div class="stars my-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="footer d-flex align-items-center justify-content-center">
+                  <span class="price pe-4">Rs 21000/-</span>
+                  <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Home Section End -->
+
+  <section class="about" id="about">
+    <div class="row">
+      <h2 class="main-heading">About Us</h2>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="image mb-5 mb-md-0">
+            <img class="img-fluid" src="./assets/images/pic.webp" alt="" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content">
+            <span>Why Choose Us?</span>
+            <h2 class="my-3">
+              Simplicity is the ultimate sophistication.
+            </h2>
+            <p class="mb-4">
+              “Design is coming to grips with one's real lifestyle, one's real place in the world. Rooms should not be
+              put together for show but to nourish one's well-being.”<br>
+
+              A designer knows when he has reached perfection not when there is nothing left to add but
+              when there is
+              nothing left to take away.<br>
+              Make your home as comfortable and attractive as possible and then get on with living.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Our Services Section Start -->
+  <section class="services" id="services">
+    <div class="row">
+      <h2 class="main-heading">Our Services</h2>
+    </div>
+    <div class="container mt-3">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-lg-0">
+          <div class="serv text-center">
+            <img class="img-fluid mb-3" src="./assets/images/services/serv-1.png" alt="serv" />
+            <h3>Fast Delivery</h3>
+            <p>
+              Everything at your doorstep<br>
+              Faster than you can think<br>
+              Delivered to your destination<br>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-lg-0">
+          <div class="serv text-center">
+            <img class="img-fluid mb-3" src="./assets/images/lp.jpeg" alt="serv" style="
+            height: 40px;
+        ">
+            <h3>Low Price</h3>
+            <p>
+              Save big on the things you love.<br>
+              Affordable prices for everyone.<br>
+              Shop smart, save big.<br>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-lg-0">
+          <div class="serv text-center" style="margin-bottom: -40px;">
+            <img class="img-fluid mb-3" src="./assets/images/services/serv-3.png" alt="serv" />
+            <h3>Best Quality</h3>
+            <p>
+              Quality is never an accident; it is always the result of high intention, sincere effort, intelligent
+              direction and skillful execution; it represents the wise choice of many alternatives.
+
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="serv text-center">
+            <img class="img-fluid mb-3" src="./assets/images/services/serv-4.png" alt="serv" />
+            <h3>24/7 Support</h3>
+            <p>
+              Customers can get help and find answers to questions as soon as they come up—24/7 and in real-time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Services Section End  -->
+
+  <!-- menu Section Start  -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="title">
+            <h2 class="mb-3 mb-md-0">Popular Decorations</h2>
+          </div>
+        </div>
+        <div class="col-md-6 text-end">
+          <div class="search">
+            <form>
+              <input type="search" id="search" placeholder="search decorations.." />
+              <label for="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-content">
+        <div class="d-flex align-items-center flex-column flex-lg-row">
+          <div class="nav flex-row flex-lg-column align-items-center nav-pills me-3" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <button class="nav-link active me-3 me-lg-0 mb-4 mb-lg-0" id="v-pills-home-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+              Vase
+            </button>
+            <button class="nav-link me-3 me-lg-0 mb-4 mb-lg-0" id="v-pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+              aria-selected="false">
+              Couch
+            </button>
+            <button class="nav-link me-3 me-3 me-lg-0 mb-4 mb-lg-0" id="v-pills-messages-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+              aria-selected="false">
+              Statue
+            </button>
+
+
+
+
+
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <div class="row" style="width: 90rem;">
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="product text-center">
+                    <div>
+                      <img class="img-fluid" src="./assets/images/vase1.webp" alt="" />
+                    </div>
+                    <h4>Vase</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 1000/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="product text-center">
+                    <img class="img-fluid" src="./assets/images/vase2.webp" alt="" />
+                    <h4>vase</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 1500/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="product text-center">
+                    <img class="img-fluid" src="./assets/images/vase3.jpeg" alt="" />
+                    <h4>Vase</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 1200/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div class="row" style="width: 90rem;">
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="product text-center">
+                    <div>
+                      <img class="prakh" src="./assets/images/c1.webp" alt="" />
+                    </div>
+                    <h4>Couch</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 70000/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="product text-center">
+                    <img class="img-fluid" src="./assets/images/c2.webp" alt="" />
+                    <h4>Couch</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 55000/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="product text-center">
+                    <img class="img-fluid" src="./assets/images/c3.webp" alt="" />
+                    <h4>Couch</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 65000/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="row" style="width: 90rem;">
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="product text-center">
+                    <div>
+                      <img class="img-fluid" src="./assets/images/s1.jpg" alt="" />
+                    </div>
+                    <h4>Statue</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 2300/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="product text-center">
+                    <img class="img-fluid" src="./assets/images/s2.jpg" alt="" />
+                    <h4>Statue</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 1800/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="product text-center">
+                    <img class="img-fluid" src="./assets/images/s3.webp" alt="" />
+                    <h4> Statue</h4>
+                    <p>
+
+                    </p>
+                    <div class="pricing">
+                      <span class="price">Rs 2300/-</span>
+                      <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        5.0
+                      </div>
+                    </div>
+                    <div class="basket">
+                      <i onclick="handleCart()" style="cursor: pointer;" class="fa fa-basket-shopping"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                let count = 0;
+                function handleCart() {
+                  count += 1;
+                  document.getElementById("cart").innerText = count;
+                }
+
+                function handleEmpty() {
+                  count = 0;
+                  document.getElementById("cart").innerText = count;
+                }
+              </script>
+
+
+            </div>
+            <div class="row mt-5">
+              <div class="btn col-12 text-center mt-5">
+
+              </div>
+            </div>
+          </div>
+  </section>
+  <!-- menu Section End  -->
+
+  <!-- Careers Section Start  -->
+  <section class="careers" id="careers">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="main-heading">
+          What our customers
+          <br />
+          are saying
+        </h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-lg-4 text-center text-md-start mb-5 mb-lg-0">
+          <div class="box">
+            <div class="stars my-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>
+              I bought this wall art a few weeks ago, and it completely transformed the ambiance of my bedroom. The
+              craftsmanship is excellent, and the colors are even more beautiful in person. The piece arrived
+              well-packaged and in perfect condition. It's a conversation starter, and I appreciate the attention to
+              detail in the design. If you're looking for a statement piece, this is it.
+            </p>
+
+            <div class="person-info d-flex flex-column flex-md-row align-items-center mt-5">
+              <img class="img-fluid rounded mb-4 mb-md-0 me-md-3" src="./assets/images/kj.jpg" alt="" />
+              <div class="text">
+                <h4>Khushank Jain</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center text-md-start mb-5 mb-lg-0">
+          <div class="box">
+            <div class="stars my-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>
+              I needed a new lamp for my home office, and this one exceeded my expectations. The sleek design adds a
+              modern touch to my workspace, and the adjustable brightness feature is incredibly handy. The build quality
+              is top-notch, and I love that it doesn't take up much space on my desk. It's both stylish and practical,
+              making it a perfect addition to any contemporary setting.
+            </p>
+
+            <div class="person-info d-flex flex-column flex-md-row align-items-center mt-5">
+              <img class="img-fluid rounded mb-4 mb-md-0 me-md-3" src="./assets/images/pp.jpg" alt="" />
+              <div class="text">
+                <h4>Prakhar Pandey</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center text-md-start">
+          <div class="box">
+            <div class="stars my-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>
+              These throw pillows are fantastic! The fabric is soft and durable, and the patterns are trendy and
+              eye-catching. They've added a pop of color to my neutral couch and have made my living room feel much
+              cozier. The quality is outstanding, and the pillows have maintained their shape even after constant use.
+              I've already recommended them to my friends who are redecorating their homes.
+            </p>
+
+            <div class="person-info d-flex flex-column flex-md-row align-items-center mt-5">
+              <img class="img-fluid rounded mb-4 mb-md-0 me-md-3" src="./assets/images/dj.jpg" alt="" />
+              <div class="text">
+                <h4>Dhun Jindal</h4>
+                <span> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers Section End  -->
+
+  <!-- Contact Section Start -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="main-heading">Contact Us</h2>
+      </div>
+    </div>
+    <div class="container">
+      <form class="row">
+        <div class="col-md-6 mb-md-0">
+          <div class="left">
+            <label class="mb-4" for="name">Your Name</label>
+            <input id="name" class="w-100 mb-4" type="text" placeholder="Enter your name" />
+            <label class="mb-3" for="order">Your Order</label>
+            <input id="order" class="w-100 mb-4" type="text" placeholder="Stuff you want" />
+            <textarea class="w-100" type="text" placeholder="Your Address"></textarea>
+
+            <a href="#" class="main-btn mt-3">Send Message</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right">
+            <label class="mb-3" for="number">Your Number</label>
+            <input id="number" class="w-100 mb-4" type="number" placeholder="your number" />
+
+            <label class="mb-3" for="date">Pick Up Date</label>
+            <input id="date" class="w-100 mb-4" type="date" />
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114306.49103846843!2d74.55331182426109!3d26.453219567745222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396be6d8fcb7cd01%3A0xcbaf8f12eb8100ee!2sAjmer%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1699197427954!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Contact Section Start -->
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="footer-top border-bottom pb-3">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="left">
+              <a href="#" class="logo mb-3">Prahi</a>
+              <p class="my-4">
+
+              </p>
+              <form class="d-flex align-items-center">
+                <input class="w-100 h-100" type="email" placeholder="hellocreative@gmail.com" />
+                <input class="h-100" type="submit" value="subscripe" />
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right mt-5 mt-lg-0">
+              <div class="row justify-content-between">
+                <div class="col-sm-6 col-md-4 mb-3 mb-lg-0">
+                  <ul class="d-flex flex-column">
+                    <h5 class="mb-4">Information</h5>
+                    <a href="#about">About Us</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#services">Terms of Services</a>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 mb-lg-0">
+                  <ul class="d-flex flex-column">
+                    <h5 class="mb-4">Useful Links</h5>
+                    <a href="#">Payment & Tax</a>
+
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy Policy</a>
+
+
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="d-flex flex-column">
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center py-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-bottom__copyright">
+            <h2>
+              Copyright &copy; <span class="year"></span>
+              <span class="name">Prahi</span> All rights reserved
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Scroll Top Button Start -->
+  <div class="scroll-top">
+    <a href="#">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+  <!-- Scroll Top Button End -->
+
+  <!-- Bootstrap v5 Js File -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- ScrollReveal -->
+  <script src="./assets/js/scrollreveal.min.js"></script>
+  <!-- Main Js File -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

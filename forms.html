@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .form {
+            margin-top: 20px 40px 20px 40px;
+            padding: 0px 40px 0px 20px;
+            background-color: white;
+            height: 700px;
+            width: 500px;
+            opacity: 90%;
+            border-radius: 3%;
+        }
+
+        .error {
+            color: crimson;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+
+        <form name="myform" onsubmit="return(validation());">
+            <div>
+                <h1>Don't have an account?! Want to join us?!</h1>
+            </div>
+            <div>
+                <p>Name</p>
+            </div>
+            <div><input type="text" placeholder="First Name Last Name" name="name">
+
+            </div>
+            <span id="errorname" class="error"></span>
+            <div>
+                <p>Email ID:</p>
+            </div>
+            <div><input type="text" placeholder="Email ID" name="email">
+
+            </div>
+            <span id="erroremail" class="error"></span>
+            <div>
+                <p>Select City</p>
+                <div>
+                    <select name="city">
+                        <option>Select</option>
+                        <option label="Ajmer"></option>
+                        <option label="Alwar"></option>
+                        <option label="Bikaner"></option>
+                        <option label="Jaipur"></option>
+                        <option label="Jaisalmer"></option>
+                        <option label="Jodhpur"></option>
+                        <option label="Kota"></option>
+                        <option label="Udaipur"></option>
+
+                    </select>
+                    <span id="errorcity" class="error"></span>
+                </div>
+                <div>
+                    <p>Gender:</p>
+                    <input type="radio" name="gender">Male<input type="radio" name="gender">Female<input type="radio"
+                        name="gender">Other
+
+                </div>
+                <span id="errorgender" class="error"></span>
+                <div>
+                    <p>Password</p>
+                    <input type="password" name="password" maxlength=50 size=20>
+
+                </div><span id="errorpassword" class="error"></span><br>
+                <div><br><input type="checkbox" name="check">I agree to the terms and conditions
+
+                </div><span id="errorcheck" class="error"></span><br>
+                <div><br>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function validation() {
+            var isValid = true;
+            if (document.myform.name.value == "") {
+                document.getElementById("errorname").innerHTML = "Name cannot be left blank";
+                isValid = false;
+            }
+            else {
+                document.getElementById("errorname") = "";
+            }
+
+            if (document.myform.email.value == "") {
+                document.getElementById("erroremail").innerHTML = "Email cannot be left blank";
+                isValid = false;
+            }
+            else {
+                document.getElementById("erroremail") = "";
+            }
+
+            if (document.myform.city.value == "Select") {
+                document.getElementById("errorcity").innerHTML = "City cannot be left blank";
+                isValid = false;
+            }
+            else {
+                document.getElementById("errorcity") = "";
+            }
+            if (document.myform.gender.value == "") {
+                document.getElementById("errorgender").innerHTML = "Gender cannot be left blank";
+                isValid = false;
+            }
+            else {
+                document.getElementById("errorgender") = "";
+            }
+            if (document.myform.password.value == "") {
+                document.getElementById("errorpassword").innerHTML = "Password cannot be left blank";
+                isValid = false;
+            }
+            else {
+                document.getElementById("errorpassword") = "";
+            }
+            if (document.myform.check.checked == false) {
+                document.getElementById("errorcheck").innerHTML = "You must agree to terms and conditions";
+                isValid = false;
+            }
+            else {
+                document.getElementById("errorcheck") = "";
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+
+</html>
